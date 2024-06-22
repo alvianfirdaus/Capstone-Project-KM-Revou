@@ -297,3 +297,10 @@ menggunakan tools amazon quicksight
 ---- 
 ### Lampiran
 
+- [Dataset](https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand/data)
+- [Dashboard Quicksight](dataset/dashboard.pdf)
+- [Spreadsheat Analysis](dataset/Salinan%20dari%20resort%20and%20city%20hotel.xlsx)
+- [PPT](dataset/PPT%20TIM%209%20MAIN%20CAPSTONE.pdf)
+
+----
+<br>![2](./img/penutup.png)</br><p>
