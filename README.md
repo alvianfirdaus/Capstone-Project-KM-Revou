@@ -81,7 +81,7 @@ Peningkatan tingkat okupansi sebesar 6% pada September 2017
     from city_hotel_checkin chc
     ```
     dihasilkan seperti berikut
-    ><br>![2](./img/.png)</br><p>
+    ><br>![2](./img/02.png)</br><p>
 
     Selain itu, kita ingin mengetahui bulan apa saja yang telah terdapat di dataset per tahunnya
 
@@ -102,7 +102,7 @@ Peningkatan tingkat okupansi sebesar 6% pada September 2017
     GROUP BY row_num;
     ```
     dihasilkan seperti berikut
-    ><br>![2](./img/.png)</br><p>
+    ><br>![2](./img/03.png)</br><p>
 
     Kesimpulan: karena data di tahun 2017 hanya mencapai bulan agustus, kita dapat memprediksi kenaikan occupancy rate berdasarkan data september 2016 untuk mendapatkan prediksi occupancy rate untuk september 2017
 
@@ -197,7 +197,7 @@ Peningkatan tingkat okupansi sebesar 6% pada September 2017
     limit 5;
     ```
     dihasilkan seperti berikut
-    ><br>![2](./img/.png)</br><p>
+    ><br>![2](./img/04.png)</br><p>
 
 10. Melihat top 5 distribution channel based on country pada September 2016
 
@@ -212,7 +212,7 @@ Peningkatan tingkat okupansi sebesar 6% pada September 2017
     limit 5;
     ```
     dihasilkan seperti berikut
-    ><br>![2](./img/.png)</br><p>
+    ><br>![2](./img/05.png)</br><p>
 
 11. Melihat top 5 meal based on country and customer type pada September 2016
     ```sql
@@ -226,9 +226,74 @@ Peningkatan tingkat okupansi sebesar 6% pada September 2017
     ```
 
     dihasilkan seperti berikut
-    ><br>![2](./img/.png)</br><p>
+    ><br>![2](./img/06.png)</br><p>
 
 12. Analisis berdasarkan hasil cleaning
 
-    Analisis occupancy rate:
-    
+    Analisis occupancy rate:<p>
+    <br>![2](./img/07.jpg)</br><p>
+    Dari hasil analisis, kita dapat prediksi bahwa kenaikan occupancy rate di September 2017 sebanyak 5.57% berdasarkan data dari September 2016
+
+13. Analisis dan rekomendasi untuk top 5 countries yang visit city hotel pada September 2016<p>
+    <br>![2](./img/04.png)</br><p>
+    Didapatkan hasil bahwa portugal, germany, france, united kingdom, dan italy merupakan country yang paling banyak mengunjungi city hotel pada September 2016.
+
+14. Analisis dan rekomendasi untuk top distribution channel based on country pada September 2016<p>
+    <br>![2](./img/05.png)</br><p>
+    Dari gambar diatas, dapat dilihat bahwa dari berbagai negara tersebut, mereka melakukan booking di city hotel melalui Travel Agents/Tour Operators.
+
+15. Analisis dan rekomendasi untuk top booking packages based on country and customer type pada September 2016<p>
+    <br>![2](./img/06.png)</br><p>
+    Dari gambar diatas, dapat dilihat bahwa most guests dari Portugal, United Kingdom, Germany, dan France prefer untuk memilih Bed and Breakfast (BB) package. Sedangkan, untuk Italy lebih prefer Half Board (HB) package
+
+-----------
+
+### Data Visualization
+menggunakan tools amazon quicksight
+
+1. Perbandingan Pertumbuhan Tingkat Penghunian: September 2016 vs September 2017<p>
+    <br>![2](./img/07.png)</br><p>
+    Berdasarkan hasil analisis menunjukkan bahwa tingkat okupansi City Hotel pada bulan September 2017 diproyeksikan mengalami perbaikan yang cukup signifikan dibandingkan bulan September 2016 dengan rata-rata peningkatan sebesar 6%.
+
+2.  Kalkulasi Occupancy Rate<p>
+    <br>![2](./img/08.png)</br><p>
+    Berdasarkan perhitungan ini, kami membulatkan selisihnya menjadi 6%. Jadi tujuan kami adalah meningkatkan tingkat okupansi pada bulan September 2017 sebesar 6%<p>
+
+3. 5 Negara Teratas yang Mengunjungi City Hotel pada September 2016<p>
+    <br>![2](./img/11.png)</br><p>
+
+    Berdasarkan hasil analisis, 5 negara teratas yang mengunjungi City Hotel pada bulan September 2016 adalah Portugal (411), Jerman (355), Perancis (283), Inggris (263), dan Italia (185).
+
+3. Saluran Distribusi Teratas Berdasarkan Negara pada bulan September 2016<p>
+    <br>![2](./img/09.png)</br><p>
+    Berdasarkan tabel tersebut dapat diketahui bahwa pada bulan September 2016, tamu dari berbagai negara melakukan pemesanan di City Hotel melalui agen perjalanan dan operator tur.<p>
+
+4. Paket Pemesanan Teratas Berdasarkan Negara dan Jenis Pelanggan pada bulan September 2016<p>
+    <br>![2](./img/10.png)</br><p>
+
+    Berdasarkan tabel tersebut, terlihat bahwa sebagian besar tamu dari Portugal, Inggris, Jerman, dan Perancis lebih memilih paket bed and breakfast (BB), sedangkan tamu dari Italia lebih memilih paket half board (HB).
+
+
+    Transient: Tamu individu yang memesan kunjungan singkat. Satu atau dua malam
+
+    Transient Party : Sekelompok tamu sementara yang memesan bersama, seperti teman, keluarga, atau kolega, untuk kunjungan singkat. Satu atau dua malam
+
+
+----------
+
+### Kesimpulan
+- City Hotel diperkirakan mengalami peningkatan tingkat hunian sebesar 6% pada bulan September 2017 dibandingkan tahun sebelumnya, yang menunjukkan pendapatan hotel juga meningkat.
+- Berdasarkan hasil analisis, Portugal, Jerman, Perancis, Inggris, dan Italia menjadi negara teratas yang mengunjungi City Hotel.
+- Berdasarkan hasil analisis, Portugal, Inggris, Jerman, dan Perancis menjadi negara dengan jumlah tamu sementara terbanyak dengan mayoritas lebih memilih paket BB (Bed and Breakfast).
+- Sedangkan tamu dari Italia sebagian besar merupakan pihak sementara yang lebih memilih paket HB (Half Board).
+
+---
+### Rekomendasi
+1.	Menerapkan Kampanye Diskon yang Ditargetkan
+2.	Meningkatkan Kemitraan dengan Agen Perjalanan  TA dan Operator Tur (TO) dari Negara-Negara Pasar Sumber Utama
+3.	Optimalisasi Situs Web Hotel untuk Meningkatkan Pemesanan Langsung
+4.	Fokus pada Pembuatan Kampanye Iklan Bertarget di Pasar Sumber Teratas
+
+---- 
+### Lampiran
+
